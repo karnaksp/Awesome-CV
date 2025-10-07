@@ -1,0 +1,94 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template was downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template License:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%-------------------------------------------------------------------------------
+% CONFIGURATION
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{../awesome-cv}
+
+% Page margins
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlighting
+\colorlet{awesome}{awesome-skyblue}
+
+% Section highlighting
+\setbool{acvSectionColorHighlight}{true}
+
+% Social links separator
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\photo[circle,noedge,left]{./img/profile}
+\name{Denis}{Irinyakov}
+\position{Middle Data Engineer}
+\address{Russia, Saint Petersburg}
+
+\mobile{+7 (924) 236-02-83}
+\email{irinyakov2016@yandex.ru}
+\homepage{karnaksp.github.io/karnaksp}
+\github{https://github.com/karnaksp}
+\telegram{t.me/calmeds}
+
+\quote{``Experienced data engineer with deep knowledge in data development and analysis."}
+
+%-------------------------------------------------------------------------------
+% LETTER INFORMATION
+%-------------------------------------------------------------------------------
+\recipient
+  {Quadcode Recruiter}
+  {Quadcode\\}
+\letterdate{\today}
+\lettertitle{Application for Data Engineer Position}
+\letteropening{Dear Quadcode Recruiter,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{414141}
+\definecolor{graytext}{HTML}{414141}
+\definecolor{lighttext}{HTML}{999999}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[R]
+
+\makecvfooter
+  {\today}
+  {Denis Irinyakov~~~\textperiodcentered~~~Cover Letter}
+  {}
+
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+% LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Introduction}
+I am very interested in your Data Engineer position. I am a data engineer with more than two years of experience in data analysis and processing. I am currently working at Axenix on a banking project, where I develop and optimize ETL processes using Airflow, Kafka, Hadoop, Greenplum and other technologies for the DWH core. Previously I worked at Spacecode and ASC "DirectService", where I was engaged in building analytical DWH and developing services with ML model support. My key skills include working with big data, ETL/ELT, SQL, Python and DevOps practices.
+
+\lettersection{Why your company?}
+I am attracted by your company's international status. I really liked the job description, the familiar technology stack and some aspects that I would like to dive deeper into. I hope that I will be able to implement this in your project. In particular, a deeper dive into Python and, perhaps, industrial experience with NoSQL databases.
+
+\lettersection{Why me?}
+Based on the job description, my experience with ETL/ELT processes on Airflow, dbt, building DWH on PostgreSQL and Greenplum, query optimization and DBMS operations is a perfect fit for you. Throughout my studies and work, I constantly delve into architectural details, trying to understand and use the advantages of different programming languages and tools. I know the basics of Go and C++ and their advantages, but I mainly program in Python. I have experience with setting up CI/CD, configuring servers via Ansible and setting up clusters for Docker Swarm / Hadoop. In addition, I have experience in data science, participating in ML hackathons and winning an all-Russian hackathon in development using ML.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
